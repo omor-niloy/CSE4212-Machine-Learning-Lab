@@ -1,0 +1,8 @@
+#!/media/promod/40705A283511A842/f/4-2/ML/CSE4212-Machine-Learning-Lab/env/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli.cli_detect())
